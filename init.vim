@@ -58,6 +58,9 @@ Plug 'romgrk/barbar.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+
 Plug 'nvzone/typr'
 Plug 'nvzone/volt'
 Plug 'nvzone/menu'
@@ -91,7 +94,8 @@ source ~/.config/nvim/plugins/barbar.vim
 " /\|-|_ _
 " \/|_||(/_|`
 " other
-"
+let g:mapleader=" "
+
 " NERDTree
 nnoremap <silent> <c-n> <Cmd>NERDTree<CR>
 
@@ -101,6 +105,12 @@ inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 
 " Undotree
 nnoremap <silent> <c-u> <Cmd>UndotreeToggle<CR>
+
+" Telescope 
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Gruvbox
 set background=dark
