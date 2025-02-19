@@ -79,7 +79,7 @@ Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
 
 Plug 'OXY2DEV/markview.nvim'
-
+Plug 'rachartier/tiny-glimmer.nvim'
 call plug#end()
 
 
@@ -88,6 +88,7 @@ call plug#end()
 " Sources
 lua require('coqlsp')
 lua require('toggleterm').setup()
+lua require('glim')
 source ~/.config/nvim/plugins/startify.vim
 source ~/.config/nvim/plugins/barbar.vim
 " lua require("menu") 
