@@ -78,6 +78,8 @@ Plug 'tpope/vim-commentary'
 
 Plug 'mbbill/undotree'
 
+Plug 'OXY2DEV/markview.nvim'
+
 call plug#end()
 
 
