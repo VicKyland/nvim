@@ -70,6 +70,7 @@ Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 Plug 'ms-jpq/coq_nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'windwp/nvim-autopairs'
 
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
@@ -89,9 +90,9 @@ call plug#end()
 lua require('coqlsp')
 lua require('toggleterm').setup()
 lua require('glim')
+lua require('autopar')
 source ~/.config/nvim/plugins/startify.vim
-source ~/.config/nvim/plugins/barbar.vim
-" lua require("menu") 
+source ~/.config/nvim/plugins/barbar.vim 
 
 
 " /\|-|_ _

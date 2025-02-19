@@ -1,3 +1,8 @@
+ -- ___                                      
+ --  | o ._        _  | o ._ _  ._ _   _  ._ 
+ --  | | | | \/ - (_| | | | | | | | | (/_ |  
+ --          /     _|                        
+
 require('tiny-glimmer').setup({
     enabled = true,
 
