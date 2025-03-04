@@ -3,6 +3,7 @@
 -- \_ (_) (_|   (_| | | (_|   |_ __) |
 --          |
 
+
 local lsp = require "lspconfig"
 local coq = require "coq"
 
@@ -21,6 +22,9 @@ lsp.yamlls.setup(coq.lsp_ensure_capabilities{})
 -- lua
 lsp.lua_ls.setup{}
 lsp.lua_ls.setup(coq.lsp_ensure_capabilities{})
+-- rust
+lsp.rust_analyzer.setup{}
+lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities{})
 
 -- settings
 vim.g.coq_settings = { auto_start = true; }
